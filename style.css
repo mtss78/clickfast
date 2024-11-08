@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+  }
+  
+  
+  #main {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+  
+  
+  .catchphrase {
+    font-size: 1.4rem;
+    color: #fefefe;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  
+  .number {
+    background: linear-gradient(45deg, #2980b9, #8e44ad); 
+    color: white;
+    padding: 25px 50px;
+    font-size: 4rem;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    transform: scale(1); 
+    transition: transform 0.1s ease-out;
+  }
+  
+  .number p {
+    margin: 0;
+  }
+  
+  
+  .number:active {
+    transform: scale(1.1);
+  }
+  
+  
+  #button-clicker {
+    background: linear-gradient(45deg, #f39c12, #f1c40f); 
+    color: #fff;
+    border: none;
+    padding: 20px 50px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #button-clicker:hover {
+    background: linear-gradient(45deg, #f39c12, #f1c40f);
+    transform: scale(1.1);
+  }
+  
+  #button-clicker:active {
+    background: #f1c40f;
+    transform: scale(0.98);
+  }
+  
+  
+  #button-reset {
+    background-color: #0078d7; 
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  
+  #button-reset:hover {
+    background-color: #16a085; 
+    transform: scale(1.05);
+  }
+  
+  #button-reset:active {
+    background-color: #16a085; 
+    transform: scale(0.98);
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .catchphrase {
+      font-size: 1.2rem;
+    }
+  
+    .number {
+      font-size: 3rem;
+      padding: 20px 40px;
+    }
+  
+    #button-clicker {
+      font-size: 1.5rem;
+      padding: 15px 40px;
+    }
+  }
+  
